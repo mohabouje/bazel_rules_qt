@@ -32,7 +32,7 @@ def qt_autoconf_impl(repository_ctx):
         # This would be the path if it has been installed using a package manager
         default_qt_path = "/usr/include/x86_64-linux-gnu/qt5"
         if not repository_ctx.path(default_qt_path).exists:
-            default_qt_path = "/usr/include/qt"
+            default_qt_path = "/usr/include/qt6"
     else:
         fail("Unsupported OS: %s" % os_name)
 
